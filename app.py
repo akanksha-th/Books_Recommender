@@ -4,13 +4,13 @@ import numpy as np
 
 st.set_page_config(layout="wide")
 
-background_image = 'background_img.jpg'
-sidebar_image = 'side_bar_img.jpg'
+background_image = 'https://www.shutterstock.com/image-vector/young-woman-opening-huge-open-600nw-2303965869.jpg'
+sidebar_image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwtaWAE0i950JcgLL0wuPsNakIAOp3B-kqSQ&s'
 
-st.sidebar.image(sidebar_image, width=250)
+st.sidebar.image(background_image, width=350)
 st.sidebar.markdown("**<center>This is a 'Collaborative Filtering' based book recommender.**", unsafe_allow_html=True)
 st.sidebar.markdown("**<center>Check it out! And you can find all the related files/folders on GitHub.**", unsafe_allow_html=True)
-st.sidebar.image(background_image, width=250)
+st.sidebar.image(sidebar_image, width=250, use_column_width = True)
 
 
 st.header("BOOK RECOMMENDATION SYSTEM")
